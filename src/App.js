@@ -14,7 +14,7 @@ function App() {
       <section>
       <Menu/>
       <Header/>
-      <div class="main-content">
+      <div className="main-content">
       <Router>
         <Routes/>
       </Router>
