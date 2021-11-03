@@ -1,0 +1,42 @@
+.header {
+    background: #FFF;
+    height: 60px;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 0 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 0 3px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 1px 0 3px rgba(0, 0, 0, 0.15); }
+
+.header::after {
+    clear: both;
+    display: block;
+    content: ''; }
+
+.sticky-header .logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    z-index: 100;
+    text-align: center; }
+  
+  .logo h1 {
+    margin: 0; }
+  
+  .sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0;
+    z-index: 1; }
+  
+  .sticky-header .main-content {
+    padding-top: 40px; }
+  
+  .sticky-header .menu-right {
+    margin-right: 5px; }
+  
+  .sticky-header.sidebar-menu-collapsed .header {
+    left: 60px; }
+  
+  .sticky-header.sidebar-menu-collapsed .menu-right {
+    margin-right: 0; }
