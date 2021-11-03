@@ -1,6 +1,9 @@
 import React from "react";
 import "./Forms.css";
 
+import Navigation from "../../components/macro/Navigation/Navigation";
+import NavigationList from "../../components/micro/NavigationList/NavigationList";
+
 export default function Forms(props) {
 
     return (
@@ -8,12 +11,10 @@ export default function Forms(props) {
             <div className="container-fluid content-top-gap">
 
                 {/* <!-- breadcrumbs --> */}
-                <nav aria-label="breadcrumb" className="mb-4">
-                    <ol className="breadcrumb my-breadcrumb">
-                        <li className="breadcrumb-item"><a href="/home">Home</a></li>
-                        <li className="breadcrumb-item active" aria-current="page">Forms</li>
-                    </ol>
-                </nav>
+                <Navigation>
+                        <NavigationList refLink="/home" name="Home" />
+                        <NavigationList active="active" name="Forms" />
+                </Navigation>
                 {/* <!-- //breadcrumbs --> */}
                 {/* <!-- forms --> */}
                 <section className="forms">

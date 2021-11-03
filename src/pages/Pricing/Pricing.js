@@ -1,6 +1,9 @@
 import React from "react";
 import "./Pricing.css"
 
+import Navigation from "../../components/macro/Navigation/Navigation";
+import NavigationList from "../../components/micro/NavigationList/NavigationList";
+
 export default function Pricing(props) {
 
     return (
@@ -8,12 +11,10 @@ export default function Pricing(props) {
             <div className="container-fluid content-top-gap">
 
                 {/* <!-- breadcrumbs --> */}
-                <nav aria-label="breadcrumb" className="mb-4">
-                    <ol className="breadcrumb my-breadcrumb">
-                        <li className="breadcrumb-item"><a href="/home">Home</a></li>
-                        <li className="breadcrumb-item active" aria-current="page">Pricing Tables</li>
-                    </ol>
-                </nav>
+                <Navigation>
+                        <NavigationList refLink="/home" name="Home" />
+                        <NavigationList active="active" name="Pricing Tables" />
+                </Navigation>
                 {/* <!-- //breadcrumbs --> */}
 
                 {/* <!-- pricing --> */}
