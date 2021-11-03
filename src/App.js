@@ -4,11 +4,13 @@ import {
 import { Routes } from "./routes";
 import './App.css';
 
+import Menu from "./components/template/Menu/Menu";
 import Header from "./components/template/Header/Header";
 
 function App() {
   return (
     <>
+      <Menu/>
       <Header/>
       <Router>
         <Routes/>

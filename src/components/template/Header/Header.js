@@ -1,6 +1,8 @@
 import React from "react";
 import './Header.css'
 
+import Profile from "../../../assets/images/headers/profileimg.jpg"
+
 export default function Header(props) {
 
     return (
@@ -22,7 +24,7 @@ export default function Header(props) {
                                     <a href="#" className="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true"
                                         aria-expanded="false">
                                         <div className="profile_img">
-                                            <img src="assets/images/profileimg.jpg" className="rounded-circle" alt="" />
+                                            <img src={Profile} className="rounded-circle" alt="" />
                                             <div className="user-active">
                                                 <span></span>
                                             </div>
